@@ -1,0 +1,31 @@
+Puntos acordados en la reunion:
+1. Basarnos en 100 fb-1 para hacer los estudios
+2. Calculo de la seccion eficaz para la region del espacio de parametros de interes por Diego y Federico
+3. Produccion de background por Nelson, Camilo y Jose
+4. Re-check bibliografico: Carlos
+5. Disegno del analisis: Camilo, Carlos, Nelson y Jose
+
+Settings:
+Segnal provisional: 
+- Para descargar: http://jruizalv.web.cern.ch/jruizalv/VLFP/tag_FFjmm_delpheslowEmuon_delphes_events.root
+- O en lxplus: /afs/cern.ch/user/j/jruizalv/www/VLFP/tag_FFjmm_delpheslowEmuon_delphes_events.root
+Repositorio: 
+https://github.com/jotadram6/VLF_CompressedSpectra
+Para contribuir al repositorio, favor hacer un fork del repositorio, hacer los cambiosque se deseen en el fork personal y luego solicitar un pull request.
+Overleaf:
+https://www.overleaf.com/10314763qmdzxsqdzjvq#/38272422/
+
+
+Bibliografia enviada por Carlos:
+Un estudio en CMS  con estados finales similares  a los que queremos estudiar es:
+Soft lepton + ISR + low jet multiplicity, stop, CMS: http://cds.cern.ch/record/2273394/files/SUS-16-052-pas.pdf
+
+Hay un estudio (que mencionó Diego esta mañana) para búsquedas de squarks ygluinos, pero es 0leptons + ISR +jets de ATLAS, con límities de exclusión en la región de espectros comprimidos:
+ ISR-JigSaw + jets + MET + no leptons: https://cds.cern.ch/record/2258145/files/ATLAS-CONF-2017-022.pdf
+
+Hay otros estudios de single lepton, pero usualmente los leptones no son soft:
+Single lepton stop search, CMS: http://inspirehep.net/record/1518836/files/SUS-16-037-pas.pdf 
+Lepton+ multijets, gluinos, CMS: http://cds.cern.ch/record/2257294/files/SUS-16-042-pas.pdf
+Single lepton + jets + MET, stop,CMS: https://arxiv.org/pdf/1706.04402.pdf
+Single lepton + jets + MET, stop, DM , ATLAS: https://cds.cern.ch/record/2266170/files/ATLAS-CONF-2017-037.pdf
+Single lepton + jets + MET, gluinos: https://arxiv.org/pdf/1605.04285.pdf
