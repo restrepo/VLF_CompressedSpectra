@@ -1,0 +1,12 @@
+macro for vlf analysis:
+1) first $tar -xvf vlf.tar
+2) to compile: $make compile_ROOT_Delphes
+3) to run: $./vlf_analyzer <inputfile.root>  <out_vlf_file.root>
+4) <inputfile.root> is the file from Delphes
+5) <out_vlf_file.root> is the file with the hisograms produced by vlf_analyzer
+6) to plot histograms edit vlfplot.cc and change the line: Tfile *f1=new Tfile("<out_vlf_file.root>")
+7) $root -l vlfplot.cc
+8) If you want to overlay signal and background histograms use vlfplot2.cc, changing the names of the root files 
+9) inside the macro
+10) Then $root -l vlfplot2.cc
+
