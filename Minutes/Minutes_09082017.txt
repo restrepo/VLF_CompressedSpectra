@@ -1,0 +1,19 @@
+Puntos acordados en la reunion:
+1. Federico va a comenzar a trabajar sobre una introduccion de motivacion
+2. Carlos va a copiar las muestras de MC para W+jets a Uniandes
+3. Nelson va a continuar con la produccion de muestras para los demas backgrounds
+4. Utilizaremos como referencia de la segnal DeltaM=5,10,20
+5. Carlos va a continuar con la optimizacion de seleccion sobre el trigger de monojet para el proximo viernes
+6. Jose y Camilo van a trabajar sobre la optimizacion de seleccion para el proximo viernes
+
+Secciones eficaces de referencia para los backgrounds [pb]:
+W(l,nu)+jets = 3091.5 
+Z(l,l)+jets = 371.5
+ttbar = 831.76
+Single top = 288.17 
+WW = 63.21
+WZ = 22.82
+ZZ = 10.32
+
+1. Seria bueno comparar estos valores con los arrojados por Madgraph
+2. Falta compilar todas las referencias bibliograficas necesarias para dichas referencias

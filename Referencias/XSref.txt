@@ -1,0 +1,8 @@
+XS for LHC pp collisions @ 13 TeV [pb]: 
+W(l,nu)+jets = 3091.5 
+Z(l,l)+jets = 371.5
+ttbar = 831.76
+Single top = 288.17 
+WW = 63.21
+WZ = 22.82
+ZZ = 10.32

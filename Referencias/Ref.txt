@@ -1,0 +1,7 @@
+Algunas referencias para las secciones eficaces:
+Z+jets: http://moriond.in2p3.fr/QCD/2017/ThursdayMorning/Wolter.pdf
+Single top http://www.slac.stanford.edu/econf/C1106061/proceedpdf/203-206.pdf
+Single top http://www.sciencedirect.com/science/article/pii/S2405601415008627
+Top LHC XS WG: https://twiki.cern.ch/twiki/bin/view/LHCPhysics/LHCTopWGSummaryPlots
+Single top: https://twiki.cern.ch/twiki/pub/LHCPhysics/LHCTopWGSummaryPlots/singletop_allchannels_may2017.pdf
+Pair production: https://twiki.cern.ch/twiki/pub/LHCPhysics/LHCTopWGSummaryPlots/tt_xsec_vsroots_may2017.pdf
