@@ -1,0 +1,13 @@
+Puntos acordados en la reunion:
+1. Federico va a comenzar a trabajar sobre una introduccion de motivacion
+2. Federico va a comenzar la produccion de nuevas muestras de segnales con al menos 100k eventos (o hasta 500k)
+3. Carlos va a trabajar sobre las variables haciendo el corte de MonoJet=MET>110 y MHT>110
+4. Camilo y Jose van a trabajar sobre la optimizacion a partir de un nuevo trigger JetPT>60, MET>60, Mu(pt)>5
+5. Carlos va a trabajar sobre la optimizacion a partir del jet de monotrigger
+6. Nelson continua la produccion de backgrounds
+
+De las minutas anteriores queda pendiente
+1. Seria bueno comparar las secciones eficaces que tenemos con las arrojadas por Madgraph
+2. Falta compilar todas las referencias bibliograficas necesarias para dichas secciones eficaces
+
+
