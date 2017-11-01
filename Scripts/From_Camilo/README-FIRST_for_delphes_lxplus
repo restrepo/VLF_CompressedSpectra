@@ -1,0 +1,5 @@
+##OJO centos 7 lxplus7
+#cargar el ROOT
+source /afs/cern.ch/sw/lcg/app/releases/ROOT/6.06.08/x86_64-centos7-gcc48-opt/root/bin/thisroot.sh
+#cargar el Delphes
+source /afs/cern.ch/user/c/csalazar/WorkPublic/VLF_CompressedSpectra/Scripts/From_Nelson/Delphes/DelphesEnv.sh
