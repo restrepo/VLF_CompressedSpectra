@@ -5,3 +5,5 @@ MCCards: Configuration cards for MC simulations
 PreliminarResults: Plots from preliminary studies
 CurrentResults: Folder to put the current results
 Script: scripts
+
+Cas ejem
