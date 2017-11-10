@@ -7,3 +7,6 @@ CurrentResults: Folder to put the current results
 Script: scripts
 
 Cas ejem
+
+## Run benchmark signal point
+Follow the instructions in UFO/README.md
