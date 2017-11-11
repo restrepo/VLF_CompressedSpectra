@@ -36,7 +36,7 @@ Block MINPAR      # Input parameters
 4   1.9600000E+04    # MS2Input
 5   1.5000000E+02    # MSFIN
 ```
-The output is obtained with:
+The output, to be used as the `madgraph param.card.dat`, is obtained with:
 ```bash
 ./SimplifiedDM-SSSFDM-Toolbox/SPHENO/bin/SPhenoSimplifiedDMSSSFDM ./Input/LesHouches.in.SimplifiedDMSSSFDM
 ```
