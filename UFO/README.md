@@ -40,6 +40,7 @@ Requires CERN-Root installation and setup
 MG5_aMC>install pythia-pgs
 MG5_aMC>install Delphes
 MG5_aMC>exit
+```
 
 ## run model with madgraph
 
