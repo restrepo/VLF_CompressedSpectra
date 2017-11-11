@@ -42,13 +42,26 @@ mv  SPheno.spc.SimplifiedDMSSSFDM Run/direcorio_con_cards/param_card.dat
 MG5_aMC>install pythia-pgs
 MG5_aMC>install Delphes
 MG5_aMC>exit
-```
-
 
 
 ```bash
 cd Run
 ../SimplifiedDM-SSSFDM-Toolbox/madgraph/bin/mg5_aMC FFjll_3.mdg
+```
+
+## Test
+
+* Check root file:
+```bash
+if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: run failed;fi
+```
+* Compare header of event file
+```bash
+gunzip FFjll_3/Events/run_01/events.lhe
+grep -B10000 "</header>" FFjll_3/Events/run_01/events.lhe > /tmp/header.lhe
+diff header.lhe /tmp/header.lhe
+# could be an empty output from this diff command
+gzip FFjll_3/Events/run_01/events.lhe
 ```
 
 ## Final remarks
