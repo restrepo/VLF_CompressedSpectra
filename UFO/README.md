@@ -60,7 +60,7 @@ if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: r
 gunzip FFjll_3/Events/run_01/events.lhe
 grep -B10000 "</header>" FFjll_3/Events/run_01/events.lhe > /tmp/header.lhe
 diff header.lhe /tmp/header.lhe
-# could be an empty output from this diff command
+# an empty output is expected for this diff command
 gzip FFjll_3/Events/run_01/events.lhe
 ```
 
