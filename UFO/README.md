@@ -22,6 +22,20 @@ Optional: Follow the instructions in index.ipynb to generate code for other tool
 You must be now in the initial directory
 
 ### Run SPHENO
+This check was done on November 11, 2017 17:00
+
+The Benchmark point chossen have
+* MF=150 GeV
+* MS=140 GeV 
+* Other input
+```
+Block MINPAR      # Input parameters 
+1   2.5500000E-01    # Lambda1IN
+2   0.0000000E+00    # LamSHIN
+3   0.1000000E+00    # LamSIN
+4   1.9600000E+04    # MS2Input
+5   1.5000000E+02    # MSFIN
+```
 
 ```bash
 ./SimplifiedDM-SSSFDM-Toolbox/SPHENO/bin/SPhenoSimplifiedDMSSSFDM ./Input/LesHouches.in.SimplifiedDMSSSFDM
