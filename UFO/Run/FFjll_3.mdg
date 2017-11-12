@@ -1,0 +1,11 @@
+import model SimplifiedDMSSSFDM -modelname
+define p g d1 d1bar d2 d2bar d3 d3bar u1 u1bar u2 u2bar
+define j g d1 d1bar d2 d2bar d3 d3bar u1 u1bar u2 u2bar
+generate p p > fre frebar j, (fre > e2 ss), (frebar > e2bar ss)
+output FFjll_3 -f
+shell cp -f direcorio_con_cards/param_card.dat FFjll_3/Cards/param_card.dat
+# shell cp -f direcorio_con_cards/delphes_card.dat FFjll_3/Cards/delphes_card_default.dat
+shell sed -e 's/False  = cut/True  = cut/g' -e 's/10.0  = ptl/1.0   = ptl/g' FFjll_3/Cards/run_card_default.dat > FFjll_3/Cards/run_card.dat
+launch FFjll_3 
+1
+3
