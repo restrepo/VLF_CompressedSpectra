@@ -5,7 +5,7 @@
 git clone https://github.com/restrepo/SimplifiedDM-SSSFDM-Toolbox
 ```
 
-copy the SimplifiedDMSSSFDM folder into  `SimplifiedDM-SSSFDM-Toolbox/madgraph/models` dir:
+<par>copy the SimplifiedDMSSSFDM folder into  `SimplifiedDM-SSSFDM-Toolbox/madgraph/models` dir:</par>
 ```bash
 cp -r SimplifiedDMSSSFDM/ SimplifiedDM-SSSFDM-Toolbox/madgraph/models/
 ```
