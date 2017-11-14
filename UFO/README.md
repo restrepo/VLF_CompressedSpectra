@@ -1,3 +1,4 @@
+<!-- To automatic generation of install.sh: All no code lines must start with #, <par>, * , or contain # -->
 # README in SSSFDM:
 
 ##  To run an example:
@@ -49,11 +50,12 @@ mv  SPheno.spc.SimplifiedDMSSSFDM Run/direcorio_con_cards/param_card.dat
 <par>Requires CERN-Root installation and setup </par>
 
 ```bash
-./SimplifiedDM-SSSFDM-Toolbox/madgraph/bin/mg5_aMC
-# skip update
-MG5_aMC>install pythia-pgs
-MG5_aMC>install Delphes
-MG5_aMC>exit
+./SimplifiedDM-SSSFDM-Toolbox/madgraph/bin/mg5_aMC << EOF
+n
+install pythia-pgs
+install Delphes
+exit
+EOF
 ```
 
 ## run model with madgraph
@@ -67,7 +69,7 @@ cd Run
 
 * Check root file:
 ```bash
-if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: run failed;fi
+if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: run failed;exit;fi
 ```
 * Compare header of event file
 ```bash

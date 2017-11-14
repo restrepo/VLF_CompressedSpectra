@@ -18,7 +18,7 @@
 #  
 # in case of problems send email to florian.staub@cern.ch and goodsell@lpthe.jussieu.fr 
 # ----------------------------------------------------------------------
-# Created: 11.11.2017,  17:22
+# Created: 14.11.2017,  15:45
 Block SPINFO         # Program information
      1   SPhenoSARAH      # spectrum calculator
      2   v3.3.8      # version number of SPheno
