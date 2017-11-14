@@ -17,7 +17,7 @@ make
 make Model=SimplifiedDMSSSFDM
 cd -
 ```
-Optional: Follow the instructions in index.ipynb to generate code for other tools like micrOMEGAS.
+<par>Optional: Follow the instructions in index.ipynb to generate code for other tools like micrOMEGAS.</par>
 
 You must be now in the initial directory
 
