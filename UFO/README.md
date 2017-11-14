@@ -1,11 +1,12 @@
+<!-- To automatic generation of install.sh: All no code lines must start with #, <par>, * , or contain # -->
 # README in SSSFDM:
-
+<par> The [instal.sh](./install.sh) script is generated automatically with the following commands in this file</par>
 ##  To run an example:
 ```bash
 git clone https://github.com/restrepo/SimplifiedDM-SSSFDM-Toolbox
 ```
 
-copy the SimplifiedDMSSSFDM folder into  `SimplifiedDM-SSSFDM-Toolbox/madgraph/models` dir:
+<par>copy the SimplifiedDMSSSFDM folder into  `SimplifiedDM-SSSFDM-Toolbox/madgraph/models` dir:</par>
 ```bash
 cp -r SimplifiedDMSSSFDM/ SimplifiedDM-SSSFDM-Toolbox/madgraph/models/
 ```
@@ -17,14 +18,14 @@ make
 make Model=SimplifiedDMSSSFDM
 cd -
 ```
-Optional: Follow the instructions in index.ipynb to generate code for other tools like micrOMEGAS.
+<par>Optional: Follow the instructions in index.ipynb to generate code for other tools like micrOMEGAS.</par>
 
-You must be now in the initial directory
+<par>You must be now in the initial directory</par>
 
 ### Run SPHENO
-This check was done on November 11, 2017 17:00
+<par>This check was done on November 11, 2017 17:00</par>
 
-The Benchmark point chossen have
+<par>The Benchmark point chossen have</par>
 * MF=150 GeV
 * MS=140 GeV 
 * Other input
@@ -36,24 +37,25 @@ Block MINPAR      # Input parameters
 4   1.9600000E+04    # MS2Input
 5   1.5000000E+02    # MSFIN
 ```
-The output, to be used as the `madgraph param.card.dat`, is obtained with:
+<par>The output, to be used as the `madgraph param.card.dat`, is obtained with:</par>
 ```bash
 ./SimplifiedDM-SSSFDM-Toolbox/SPHENO/bin/SPhenoSimplifiedDMSSSFDM ./Input/LesHouches.in.SimplifiedDMSSSFDM
 ```
-The output is: `SPheno.spc.SimplifiedDMSSSFDM`
+<par>The output is: `SPheno.spc.SimplifiedDMSSSFDM`</par>
 ```bash
 mv  SPheno.spc.SimplifiedDMSSSFDM Run/direcorio_con_cards/param_card.dat
 ```
 
 ## Install madgraph tools
-Requires CERN-Root installation and setup 
+<par>Requires CERN-Root installation and setup </par>
 
 ```bash
-./SimplifiedDM-SSSFDM-Toolbox/madgraph/bin/mg5_aMC
-# skip update
-MG5_aMC>install pythia-pgs
-MG5_aMC>install Delphes
-MG5_aMC>exit
+./SimplifiedDM-SSSFDM-Toolbox/madgraph/bin/mg5_aMC << EOF
+n
+install pythia-pgs
+install Delphes
+exit
+EOF
 ```
 
 ## run model with madgraph
@@ -67,7 +69,7 @@ cd Run
 
 * Check root file:
 ```bash
-if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: run failed;fi
+if [ ! -f "FFjll_3/Events/run_01/tag_1_delphes_events.root" ];then echo ERROR: run failed;exit;fi
 ```
 * Compare header of event file
 ```bash
