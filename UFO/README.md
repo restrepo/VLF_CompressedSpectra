@@ -1,6 +1,6 @@
 <!-- To automatic generation of install.sh: All no code lines must start with #, <par>, * , or contain # -->
 # README in SSSFDM:
-<par> The [instal.sh](./install.sh) script is generated directly from this file</par>
+<par> The [instal.sh](./install.sh) script is generated automatically with the following commands in this file</par>
 ##  To run an example:
 ```bash
 git clone https://github.com/restrepo/SimplifiedDM-SSSFDM-Toolbox
