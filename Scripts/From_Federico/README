@@ -1,0 +1,37 @@
+Info:
+macros to read all root-files with signal and background, write datafiles with significance and numbers of s & b after cuts (propto efficiencies).
+eventually to do: write also efficiencies.
+
+Unpack:
+tar -pzvxf packge.tar.gz .
+eventually chmod ugo+x main.sh .
+change paths to signal and background root-files.
+change *.h files and Makefile to set paths do root and Delphes. Works in dezero.uniandes.
+
+Run: 
+./main.sh 
+tells you which variables are needed as input. F.i. 
+./main.sh 100 200 1 10 0
+scans MF between MassFi=100 and MassFf=200 in steps of (default 5, see main.sh)
+and DeltaM between 1 and 10 in steps of (default 1, see main.sh);
+reads cross-sections in main.sh (works with the XS written in main.sh, could change 0 by any cross-section in fb).
+reads file with cuts: cutsinfo10095.dat=cutsinfo10095_orig.dat. Modify cuts there. 
+!!! Beware !!!: cut in nuber of jets is here <= , not <. 
+Modify eventually in scan.cc , or replace by Newfiles/scan.cc (also, change in cut-flow order, same results).
+(scan.cc.orig = scan.cc in this tarball).
+here:                  if (Numjets<=njetscut[i2]) {
+in Newfiles/scan.cc:   if (Numjets<njetscut[i5]) {       #use cutsinfo10095_newfiles.dat
+
+Output:
+nsignalnp.dat: nunpy dataframe with number of signal events for every scneario. ( format [[DeltaMi&MFi, ....,DeltaMf&MFi],[],...[DeltaMf&MFf]]).
+significancenp.dat: same for significance.
+
+Options: 
+Background=1 (default) reads background and signal. 
+Background=0 reads only signal root-files, reads background *total.dat files (works if already run with Background=1 with exactly those cuts, else leads to incorrect results).
+Background=-1 reads both signal and background from *total.dat files.
+
+==========================================
+additional files not needed for main.sh == scanloop_xs.sh :
+
+... to be added here later .... read more than one root-file for any given parameter point.
