@@ -1,0 +1,7 @@
+CUTNAME     #CUTS   VALUES  (product of numbers in #cuts column has to be <25000)        
+muonptcut     1     15.0   
+njetscut      1     3
+ljetptcut     1     50.0    
+metcut        1     150.0    
+mtcut         1     30.0          
+dphicut       1     0.0 
