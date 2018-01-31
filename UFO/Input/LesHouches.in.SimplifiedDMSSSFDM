@@ -13,8 +13,8 @@ Block MINPAR      # Input parameters
 1   2.5500000E-01    # Lambda1IN
 2   0.0000000E+00    # LamSHIN
 3   0.1000000E+00    # LamSIN
-4   1.9600000E+04    # MS2Input
-5   1.5000000E+02    # MSFIN
+4   1.2100000E+04    # MS2Input
+5   1.0000000E+02    # MSFIN
 Block SPhenoInput   # SPheno specific input 
   1 -1              # error level 
   2  0              # SPA conventions 
