@@ -18,7 +18,7 @@
 #  
 # in case of problems send email to florian.staub@cern.ch and goodsell@lpthe.jussieu.fr 
 # ----------------------------------------------------------------------
-# Created: 31.01.2018,  18:03
+# Created: 15.02.2018,  10:20
 Block SPINFO         # Program information
      1   SPhenoSARAH      # spectrum calculator
      2   v3.3.8      # version number of SPheno
@@ -31,8 +31,8 @@ Block MINPAR  # Input parameters
     1    2.55000000E-01  # Lambda1IN
     2    0.00000000E+00  # LamSHIN
     3    1.00000000E-01  # LamSIN
-    4    4.90000000E+03  # MS2Input
-    5    7.05000000E+01  # MSFIN
+    4    8.10000000E+03  # MS2Input
+    5    1.00000000E+02  # MSFIN
 Block gaugeGUT Q= -1.00000000E+00  # (GUT scale)
    1    0.00000000E+00  # g1(Q)^DRbar
    2    0.00000000E+00  # g2(Q)^DRbar
@@ -51,12 +51,12 @@ Block GAUGE Q=  1.60000000E+02  # (Renormalization Scale)
 Block HDM Q=  1.60000000E+02  # (Renormalization Scale)
    3    1.00000000E-01  # LS
    2    0.00000000E+00  # LSH
-   1    7.05000000E+01  # MFS
+   1    1.00000000E+02  # MFS
 Block SM Q=  1.60000000E+02  # (Renormalization Scale)
    2    2.55000000E-01  # Lam
    1   -7.72963250E+03  # Mu
 Block MSOFT Q=  1.60000000E+02  # (Renormalization Scale)
-  22    4.90000000E+03  # MS2
+  22    8.10000000E+03  # MS2
 Block HMIX Q=  1.60000000E+02  # (Renormalization Scale)
    3    2.46220569E+02  # v
 Block TREESM Q=  1.60000000E+02  # (Renormalization Scale)
@@ -76,7 +76,7 @@ Block Yu Q=  1.60000000E+02  # (Renormalization Scale)
 Block YS Q=  1.60000000E+02  # (Renormalization Scale)
    1    0.00000000E+00  # Ys(1) 
    2    1.00000000E-01  # Ys(2) 
-   3    0.00000000E+00  # Ys(3) 
+   3    1.73205000E-01  # Ys(3) 
 Block Yd Q=  1.60000000E+02  # (Renormalization Scale)
   1  1     2.87184285E-05   # Real(Yd(1,1),dp)
   1  2     0.00000000E+00   # Real(Yd(1,2),dp)
@@ -100,7 +100,7 @@ Block Ye Q=  1.60000000E+02  # (Renormalization Scale)
 Block MASS  # Mass spectrum
 #   PDG code      mass          particle
         25     1.24335293E+02  # hh
-   6666635     7.00000000E+01  # ss
+   6666635     9.00000000E+01  # ss
         23     9.11887000E+01  # VZ
         24     8.03497269E+01  # VWp
          1     5.00000000E-03  # Fd_1
@@ -115,7 +115,7 @@ Block MASS  # Mass spectrum
         12     0.00000000E+00  # Fv_1
         14     0.00000000E+00  # Fv_2
         16     0.00000000E+00  # Fv_3
-   6000061     7.05000000E+01  # Fre
+   6000061     1.00000000E+02  # Fre
 Block UVMIX Q=  1.60000000E+02  # ()
   1  1     1.00000000E+00   # Real(UV(1,1),dp)
   1  2     0.00000000E+00   # Real(UV(1,2),dp)
@@ -214,8 +214,8 @@ Block EFFHIGGSCOUPLINGS # values of loop-induced couplings
         25           22           23     0.00000000E+00 # H-Photon-Z (not yet calculated by SPheno) 
 Block SPhenoLowEnergy # low energy observables 
       20    2.18103453E-23  # (g-2)_e
-      21    2.18812362E-14  # (g-2)_mu
-      22    9.89019372E-10  # (g-2)_tau
+      21    6.20391539E-12  # (g-2)_mu
+      22    6.23384788E-09  # (g-2)_tau
       23    0.00000000E+00  # EDM(e)
       24    0.00000000E+00  # EDM(mu)
       25    0.00000000E+00  # EDM(tau)
@@ -274,7 +274,7 @@ Block FlavorKitQFV # quark flavor violating observables
 Block FlavorKitLFV # lepton flavor violating observables 
      701    0.00000000E+00  # BR(mu->e gamma)
      702    0.00000000E+00  # BR(tau->e gamma)
-     703    0.00000000E+00  # BR(tau->mu gamma)
+     703    3.50537869E-09  # BR(tau->mu gamma)
      800    0.00000000E+00  # CR(mu-e, Al)
      801    0.00000000E+00  # CR(mu-e, Ti)
      802    0.00000000E+00  # CR(mu-e, Sr)
@@ -283,23 +283,23 @@ Block FlavorKitLFV # lepton flavor violating observables
      805    0.00000000E+00  # CR(mu-e, Pb)
      901    0.00000000E+00  # BR(mu->3e)
      902    0.00000000E+00  # BR(tau->3e)
-     903    0.00000000E+00  # BR(tau->3mu)
+     903    3.08207184E-11  # BR(tau->3mu)
      904    0.00000000E+00  # BR(tau- -> e- mu+ mu-)
-     905    0.00000000E+00  # BR(tau- -> mu- e+ e-)
+     905    5.71453967E-11  # BR(tau- -> mu- e+ e-)
      906    0.00000000E+00  # BR(tau- -> e+ mu- mu-)
      907    0.00000000E+00  # BR(tau- -> mu+ e- e-)
     1001    0.00000000E+00  # BR(Z->e mu)
     1002    0.00000000E+00  # BR(Z->e tau)
-    1003    0.00000000E+00  # BR(Z->mu tau)
+    1003    2.42360568E-12  # BR(Z->mu tau)
     1101    0.00000000E+00  # BR(h->e mu)
     1102    0.00000000E+00  # BR(h->e tau)
-    1103    0.00000000E+00  # BR(h->mu tau)
+    1103    2.38422505E-21  # BR(h->mu tau)
     2001    0.00000000E+00  # BR(tau->e pi)
     2002    0.00000000E+00  # BR(tau->e eta)
     2003    0.00000000E+00  # BR(tau->e eta')
-    2004    0.00000000E+00  # BR(tau->mu pi)
-    2005    0.00000000E+00  # BR(tau->mu eta)
-    2006    0.00000000E+00  # BR(tau->mu eta')
+    2004    9.15368429E-41  # BR(tau->mu pi)
+    2005    1.35327770E-41  # BR(tau->mu eta)
+    2006    1.48122634E-41  # BR(tau->mu eta')
 Block FWCOEF Q=  1.60000000E+02  # Wilson coefficients at scale Q 
      0305 4422   00   0    -0.17249277E-08    # coeffC7sm
      0305 4422   00   2    -0.17249277E-08    # coeffC7
@@ -631,6 +631,7 @@ DECAY        25     3.78348685E-03   # hh
      2.35019930E-04    2          -13         13   # BR(hh -> Fe_2^* Fe_2 )
      6.78378601E-02    2          -15         15   # BR(hh -> Fe_3^* Fe_3 )
      2.76075557E-02    2           -4          4   # BR(hh -> Fu_2^* Fu_2 )
-DECAY   6000061     1.36953934E-06   # Fre
+DECAY   6000061     1.42093005E-03   # Fre
 #    BR                NDA      ID1      ID2
-     1.00000000E+00    2           13    6666635   # BR(Fre -> Fe_2 ss )
+     2.52704451E-01    2           13    6666635   # BR(Fre -> Fe_2 ss )
+     7.47295549E-01    2           15    6666635   # BR(Fre -> Fe_3 ss )
